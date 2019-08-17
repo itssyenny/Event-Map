@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> User settings </title>
+    {{form.media}}
+</head>
+<body>
+<form action="{% url "event_map:user_preference" %}" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <p>What is your preference:</p>
+    {% for event_type in event_types %}
+    <input type="checkbox" name="{{event_type}}" value="TRUE"{% if event_type in preferences %} checked {% endif %}>{{event_type}}<br>
+    {% endfor %}
+    <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>

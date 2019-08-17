@@ -3,6 +3,8 @@
 ## Description
 Event Map is a website that can help users to register their account, record their schedule events, and remind users about the upcoming events based on their preferences via email a few days before the upcoming events will be held.
 
+Collaboration of six people in creating this project using frontend (HTML, CSS, Javascript), database (mySQL), and backend (Python). In addition, we also integrated this project with Google API and Google Calendar API.
+
 ## Update:
 Now supports user preference. Visit https://localhost:8000/preference
 
